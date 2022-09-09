@@ -1,0 +1,295 @@
+@import "https://fonts.googleapis.com/css?family=Roboto|Lato|Open+Sans|Work+Sans|Trirong|Raleway|Bebas+Neue|Satisfy";
+
+body {
+    font-size: 20px;
+    background-color: #f5f5f5;
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+
+    background-color: #2a2a2a;
+    position: sticky;
+    padding: 10px;
+    color: #c1c1c1;
+    text-align: center;
+
+}
+
+.container {
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+header {
+
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+header .top {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+header .top .branding {
+
+    display: flex;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: center;
+    width: 30%;
+
+}
+
+header .top .branding img {
+
+    width: 240px;
+
+}
+
+header .top .search {
+
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    align-items: center;
+
+    flex-grow: 1;
+
+}
+
+header .top .search .searchHolder {
+
+    border-radius: 10px;
+    border: 2px solid #CCC;
+    background-color: #FFFFFF;
+
+    padding: 4px;
+    display: flex;
+
+}
+
+header .top .search .searchHolder input {
+    margin-left: 10px;
+}
+
+header .top .customer {
+
+    display: flex;
+    justify-content: flex-end;
+    align-self: stretch;
+    align-items: center;
+
+    width: 30%;
+
+
+}
+
+header .top .customer .bi {
+
+    margin-right: 40px;
+
+}
+
+header .top .customer .bi:hover {
+
+    color: #a7c057;
+
+}
+
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    padding: 10px;
+}
+
+header nav li:hover {
+
+    background-color: #a7c057;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+main section.hero {
+
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+
+}
+
+main section.hero .textContent {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a7c057;
+
+}
+
+main section.hero .textContent p {
+
+    width: 70%;
+
+}
+
+main section.hero .image {
+
+    display: flex;
+
+}
+
+main section.hero .image img {
+
+    width: 400px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background-color: #eaffa7;
+    border: 0;
+    border-bottom: 4px solid #748a2b;
+    color: #748a2b;
+    font-weight: bold;
+}
+
+button:hover {
+
+    color: #202020;
+    cursor: pointer;
+
+}
+
+input,
+input:focus,
+input:active {
+    font-size: 20px;
+    border: 0px;
+    outline: 0;
+}
+
+.bi {
+    font-size: 30px;
+}
+
+footer {
+
+    background-color: #282828;
+    color: #797979;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    main section.hero {
+
+        flex-direction: column;
+        /* gap: 10px; */
+
+    }
+
+    main section.hero .image img {
+
+        width: 100%;
+
+    }
+
+    main section.hero .textContent {
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+    main section.hero {
+
+        flex-direction: column;
+        /* gap: 10px; */
+
+    }
+
+    main section.hero .image img {
+
+        width: 100%;
+
+    }
+
+    main section.hero .textContent {
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+
+    header .top {
+
+        flex-direction: column;
+
+    }
+
+    header .top .branding {
+
+        justify-content: center;
+
+        align-self: center;
+
+    }
+
+    header .top .customer {
+
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+
+    }
+
+    header .top .customer .bi:last-child {
+        margin: 0;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
